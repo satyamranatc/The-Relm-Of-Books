@@ -1,0 +1,91 @@
+/* BookStoreNavbar.css */
+
+.navbar {
+    width: 100%;
+    padding: 0 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+  }
+  
+  .navbar-logo {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-link {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .navbar-link svg {
+    margin-right: 0.25rem;
+  }
+  
+  .theme-toggle {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Light theme styles */
+  .navbar.light {
+    background-color: rgb(194, 212, 212);
+    color: #1f2937;
+  }
+  
+  .navbar.light .navbar-link:hover {
+    background-color: #f3f4f6;
+  }
+  
+  /* Dark theme styles */
+  .navbar.dark {
+    background-color: #1f2937;
+    color: white;
+  }
+  
+  .navbar.dark .navbar-link:hover {
+    background-color: #374151;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 640px) {
+    .navbar-container {
+      flex-direction: column;
+      height: auto;
+      padding: 1rem 0;
+    }
+  
+    .navbar-links {
+      margin-top: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .navbar-link {
+      margin: 0.25rem;
+    }
+  }
