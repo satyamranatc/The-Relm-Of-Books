@@ -8,6 +8,7 @@ import NavBar from './Components/NavBar'
 import Home from './Pages/Home/Home'
 import Products from './Pages/Products/Products'
 import Cart from './Pages/Cart/Cart'
+import AdminPannel from './Pages/AdminPannel/AdminPannel.jsx'
 // ?----------------------------------------------------------------
 
 export default function App() {
@@ -22,6 +23,11 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/products/*" element={<Products />} />
             <Route path="/cart" element={<Cart />} />
+            {/* Admin Routings */}
+            <Route path="/admin" element={<AdminPannel />} />
+
+
+
         </Routes>
     
     </BrowserRouter>

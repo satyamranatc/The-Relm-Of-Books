@@ -10,4 +10,5 @@ let BookSchema = new mongoose.Schema({
     rating: Number
 })
 
-export default Book = mongoose.model("Book", BookSchema);
+const Books = mongoose.model("Book", BookSchema);
+export default Books;

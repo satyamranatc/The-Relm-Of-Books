@@ -9,7 +9,7 @@ export default function ProductGrid() {
     useEffect(() => {
         async function fetchData() {
           try {
-            const response = await axios.get("http://localhost:5100/api/data");
+            const response = await axios.get("http://localhost:5100/api/books/getlist");
             setBookData(response.data.BooksData);
           } catch (error) {
             console.error("Error fetching book data:", error);
